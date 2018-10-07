@@ -31,7 +31,7 @@ describe "fibonacci" do
     it "nil object is not an integer" do
       proc {fibonacci(nil)}.must_raise ArgumentError
     end
-
+    
     it "negative input" do
       proc {fibonacci(-9)}.must_raise ArgumentError
     end
